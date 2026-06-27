@@ -2,7 +2,10 @@
 
 from __future__ import annotations
 
-from enum import StrEnum
+from enum import Enum
+class StrEnum(str, Enum):
+    pass
+
 from typing import TYPE_CHECKING, Protocol
 
 if TYPE_CHECKING:

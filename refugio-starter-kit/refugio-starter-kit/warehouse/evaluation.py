@@ -4,7 +4,8 @@ from __future__ import annotations
 
 from collections.abc import Mapping, Sequence
 from time import perf_counter
-from typing import NotRequired, TypedDict
+from typing import TypedDict
+from typing_extensions import NotRequired
 
 from warehouse.actions import ActFunction, Action, PolicyTimeBudgetExceededError
 from warehouse.layout import CellType, generate_grid, is_walkable_cell

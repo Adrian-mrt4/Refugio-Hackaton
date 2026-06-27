@@ -5,7 +5,10 @@ from __future__ import annotations
 from collections import defaultdict
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, replace
-from enum import StrEnum
+from enum import Enum
+class StrEnum(str, Enum):
+    pass
+
 
 from warehouse.actions import MOVEMENT_ACTIONS, Action, coerce_action
 from warehouse.layout import (
